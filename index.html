@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Clover</title>
+        <meta name="description" content="">
+        <meta name="author" content="ticlekiwi">
+
+        <meta http-equiv="cleartype" content="on">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" media="all">
+    </head>
+    <body>
+        <header>
+            <div class="settings">
+                <div class="menu-button"></div>
+            </div>
+            <form id="clover-form">
+            <div class="actions">
+                <input type="text" class="clover_visible" name="clover_prefix" id="clover_prefix" value="Game of Thrones S01EP"/><span class="clover_visible noselect">01</span><input type="text" class="clover_visible" name="clover_suffix" id="clover_suffix" value=" VOSTFR 720p"/>
+            </div>
+            </form>
+        </header>
+        <div id="main" class="empty">
+            <div class="content-main-file"></div>
+            <div class="content-uploading">
+                <span class="round"></span>
+                <span class="image"></span>
+                <span class="subtitle noselect">DRAG & DROP<br>any file(s)</span>
+                <input type="file" name="upload_input" class="upload_input" multiple>
+            </div>
+        </div>
+        <div class="bottom-action">
+            <a href="#" class="button-action rename">Rename</a>
+            <div class="success">File(s) renamed</div>
+        </div>
+    </body>
+
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</html>

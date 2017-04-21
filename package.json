@@ -1,0 +1,25 @@
+{
+  "name": "Clover",
+  "version": "1.0.0",
+  "description": "A helpfull tool to rename TV Shows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "author": "ticlekiwi",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-builder": "^17.0.1",
+    "electron-inspector": "^0.1.4",
+    "electron-packager": "^8.6.0",
+    "electron-rebuild": "^1.2.1"
+  },
+  "build": {
+    "appId": "com.clover.app",
+    "mac": {
+      "category": "public.app-category.productivity"
+    }
+  }
+}
